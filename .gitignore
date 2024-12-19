@@ -25,3 +25,5 @@ dist-ssr
 
 /node_modules
 /bootstrap-studio
+/design
+src/design

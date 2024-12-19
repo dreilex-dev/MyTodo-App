@@ -6,10 +6,15 @@
   border-radius: 0px 10px 10px 0px;
 }
 
-input {
-  border-radius: !important 6px 0px 0px 6px;
-}
-
 input:focus {
   box-shadow: none !important;
 }
+
+.gradient-h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #0d6efd, #5bafff, #ff7f0d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
