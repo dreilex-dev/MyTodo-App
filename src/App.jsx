@@ -3,7 +3,6 @@ import ToDoInput from "./ToDoInput";
 import ToDoList from "./ToDoList";
 import '../src/design/assets/bootstrap/css/bootstrap.min.css'; 
 import '../src/design/assets/css/styles.css';
-import Banner from "./Banner";
 
 function App() {
   const [tasks, setTasks] = useState([]);
