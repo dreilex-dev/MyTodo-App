@@ -4,42 +4,59 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>To Do app</title>
+    <title>todoapp_3_form</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="/MyTodo-app/assets/index-DoHTQeec.css">
+    
 </head>
 
 <body style="color: #F9F8F8;">
-    <div class="container d-flex flex-column justify-content-center align-items-center mt-5 py-4 gap-3" style="font-family: Alata">
+    <div class="container d-flex flex-column justify-content-center align-items-center mt-5 py-4 gap-3" style="font-family: Alata, sans-serif;">
         <div class="row">
-            <div class="text-center col">
+            <div class="col text-center">
                 <h1 style="color: var(--bs-primary);">My ToDo app</h1>
             </div>
         </div>
-        <div class="row mt-4" id="userInput">
+        <form id="userInput" class="row mt-4" style="min-width: 300px;">
             <div class="d-inline-flex flex-column justify-content-center align-items-center align-content-center col-md-8 offset-md-2">
-                <div class="d-flex justify-content-center align-items-center align-content-center input-group" style="width: max-content;"><input id="textInput" type="text" class="form-control" placeholder="Add new task ..."><button id="submitButton" class="btn btn-primary" type="button">add</button></div>
+                <div class="d-flex justify-content-center align-items-center align-content-center input-group" style="width: max-content;"><input class="form-control" type="text" id="textInput" placeholder="Add new task..." style="width: max-content;"><button class="btn btn-primary" id="submitButton" type="submit">Button</button></div>
             </div>
-        </div>
-        <div class="row mt-5" style="margin: auto;" id="taskList">
+        </form>
+        <div id="taskList" class="row mt-5" style="width: 300px;">
             <ul class="list-group">
                 <li class="list-group-item">
                     <div class="align-items-center row">
                         <div class="col-10">
-                            <p class="fw-bold text-muted no-margin">Have a meeting at 2pm with the CEO</p>
+                            <p class="fw-bold text-muted no-margin">Have the meeting with the CEO - me</p>
                         </div>
-                        <div class="text-end col-2"><input type="checkbox" class="form-check-input"></div>
+                        <div class="text-end d-md-flex justify-content-md-center col-2"><input type="checkbox" class="form-check-input"></div>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="align-items-center row">
                         <div class="col-10">
-                            <p class="fw-bold text-muted no-margin">Prepare the tech talk presentation</p>
+                            <p class="fw-bold text-muted no-margin">Have the meeting with the CEO - me</p>
                         </div>
-                        <div class="text-end col-2"><input type="checkbox" class="form-check-input"></div>
+                        <div class="text-end d-md-flex justify-content-md-center col-2"><input type="checkbox" class="form-check-input"></div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="align-items-center row">
+                        <div class="col-10">
+                            <p class="fw-bold text-muted no-margin">Have the meeting with the CEO - me</p>
+                        </div>
+                        <div class="text-end d-md-flex justify-content-md-center col-2"><input type="checkbox" class="form-check-input"></div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="align-items-center row">
+                        <div class="col-10">
+                            <p class="fw-bold text-muted no-margin">Have the meeting with the CEO - me</p>
+                        </div>
+                        <div class="text-end d-md-flex justify-content-md-center col-2"><input type="checkbox" class="form-check-input"></div>
                     </div>
                 </li>
             </ul>

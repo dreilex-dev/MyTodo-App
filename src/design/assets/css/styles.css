@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-
 .no-margin {
   margin-bottom: 0px;
 }
 
+.btn {
+  border-radius: 0px 10px 10px 0px;
+}
+
+input {
+  border-radius: !important 6px 0px 0px 6px;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
 
