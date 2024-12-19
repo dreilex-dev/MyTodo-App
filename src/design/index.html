@@ -4,19 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>todoapp_3_form</title>
+    <title>todoapp_4_minwidth</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="/MyTodo-app/assets/index-DoHTQeec.css">
-    
 </head>
 
-<body style="color: #F9F8F8;">
+<body style="color: #F9F8F8;background: #f8f9fa;">
     <div class="container d-flex flex-column justify-content-center align-items-center mt-5 py-4 gap-3" style="font-family: Alata, sans-serif;">
         <div class="row">
             <div class="col text-center">
+                <div class="banner-contaienr"></div>
                 <h1 style="color: var(--bs-primary);">My ToDo app</h1>
             </div>
         </div>
@@ -25,36 +25,12 @@
                 <div class="d-flex justify-content-center align-items-center align-content-center input-group" style="width: max-content;"><input class="form-control" type="text" id="textInput" placeholder="Add new task..." style="width: max-content;"><button class="btn btn-primary" id="submitButton" type="submit">Button</button></div>
             </div>
         </form>
-        <div id="taskList" class="row mt-5" style="width: 300px;">
-            <ul class="list-group">
-                <li class="list-group-item">
+        <div id="taskList" class="row mt-5 glassmor" style="width: 300px;">
+            <ul class="list-group" style="padding-right: 0px;">
+                <li class="list-group-item" style="padding: 8px;">
                     <div class="align-items-center row">
-                        <div class="col-10">
-                            <p class="fw-bold text-muted no-margin">Have the meeting with the CEO - me</p>
-                        </div>
-                        <div class="text-end d-md-flex justify-content-md-center col-2"><input type="checkbox" class="form-check-input"></div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="align-items-center row">
-                        <div class="col-10">
-                            <p class="fw-bold text-muted no-margin">Have the meeting with the CEO - me</p>
-                        </div>
-                        <div class="text-end d-md-flex justify-content-md-center col-2"><input type="checkbox" class="form-check-input"></div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="align-items-center row">
-                        <div class="col-10">
-                            <p class="fw-bold text-muted no-margin">Have the meeting with the CEO - me</p>
-                        </div>
-                        <div class="text-end d-md-flex justify-content-md-center col-2"><input type="checkbox" class="form-check-input"></div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="align-items-center row">
-                        <div class="col-10">
-                            <p class="fw-bold text-muted no-margin">Have the meeting with the CEO - me</p>
+                        <div class="col-10" style="min-width: 200px;">
+                            <p class="fw-bold text-muted no-margin">Task 1</p>
                         </div>
                         <div class="text-end d-md-flex justify-content-md-center col-2"><input type="checkbox" class="form-check-input"></div>
                     </div>

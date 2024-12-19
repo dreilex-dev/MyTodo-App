@@ -5,7 +5,7 @@ function ToDoList({ tasks }) {
         {tasks.map((task, index) => (
           <li className="list-group-item" key={index} style={{ minWidth: "160px" }}>
             <div className="align-items-center row">
-              <div className="col-10">
+              <div className="col-10" style={{minWidth: "200px"}}>
                 <p className="fw-bold text-muted no-margin">{task}</p>
               </div>
               <div className="text-end col-2">
