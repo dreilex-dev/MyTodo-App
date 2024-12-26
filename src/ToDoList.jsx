@@ -1,4 +1,5 @@
 function ToDoList({ tasks }) {
+  
   return (
     <div className="row mt-2" style={{ margin: "auto" }} id="taskList">
       <ul className="list-group">
@@ -9,7 +10,7 @@ function ToDoList({ tasks }) {
                 <input type="checkbox" className="form-check-input" />
               </div>
               <div className="col-10" style={{minWidth: "200px"}}>
-                <p className="fw-bold text-muted no-margin">{task}</p>
+                <p className="fw-bold text-muted no-margin">{task.name}</p>
               </div>
             </div>
           </li>
