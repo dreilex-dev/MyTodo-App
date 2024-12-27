@@ -29,15 +29,33 @@ function App() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
 
+  const handleTaskToggle = (id) => {
+    console.log("Task ID received:", id);
+    console.log("Tasks before the update:", tasks);
+  
+    const updatedTasks = tasks.map((task) => {
+      if (task.id === id) {
+        console.log("Task found for modification:", task);
+        return { ...task, done: !task.done };
+      }
+      return task;
+    });
+  
+    console.log("Tasks after modification:", updatedTasks);
+    setTasks(updatedTasks);
+  };
+  
   return (
     <div className="container d-flex flex-column justify-content-center align-items-center mt-5 py-4 gap-3" style={{ fontFamily: "Alata", color: "#F9F8F8" }}>
       <div className="row">
         <div className="text-center col">
-          <h1 className="gradient-h1" style={{ color: "var(--bs-primary)" }}>My ToDo app</h1>
+          <h1 
+          className="gradient-h1" 
+          style={{ color: "var(--bs-primary)" }}>My ToDo app</h1>
         </div>
       </div>
       <ToDoInput addTask={addTask} />
-      <ToDoList tasks={tasks} />
+      <ToDoList tasks={tasks} onToggleTask={handleTaskToggle}/>
     </div>
   );
 }
